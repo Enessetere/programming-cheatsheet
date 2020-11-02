@@ -1,4 +1,4 @@
-#Programming Cheat-Sheet
+<h1>Programming Cheat-Sheet</h1>
 
 1. **Covered Design Patterns**
 
@@ -41,7 +41,7 @@ For example: imagine company, that can create both cars and bikes. Creating them
 For example: you have two systems that holds users, but they are in a different format. So you need some kind converter between them, to store user details in database or display it together in same window.
 
 ***Bridge*** is a structural design pattern, that allows splitting large class into abstract class and its implementation, which only communicate with abstract class.
-For example: you have a big database of questions with many methods, and you want to modify them without adding another lines of code. So you can create an interface that will communicate with questions, and use it to control and modify them, without changing their processes.
+For example: you have a big database of questions with many methods, and you want to modify them without adding another lines of code. So you can create an interface that will communicate with questions, and use it to control and modify them, without changing their processes.!
 
 ***Builder*** is a creational design pattern, that allows building more complex objects step by step.
 For example: when you have class with 10 or more fields in a constructor. It is hard to remember all of them and their order. You can create inner class, that will build base class by setting fields one after another.
