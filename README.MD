@@ -31,6 +31,9 @@
         - strategy
         - template
         - visitor
+        
+    4. ***Architectural***
+        - event bus
 
 2. **Description**
 
@@ -57,6 +60,9 @@ For example: in company, the most important person is Boss. Next in charge are d
 
 ***Decorator*** is a structural design pattern, that allows adding new duties to objects by placing them in special wrapper objects.
 For example: you want to log every change system, you have created class to log necessary data. All you need is to call it. Or even better is to wrap this object in wrapper, so you can log state before and after processing.
+
+***Event bus*** is an architectural design pattern, that allows communicating between modules without using API.
+For example: you have created few microservices with exposed endpoints. Your modules can communicate each other by using API, just like clients do, or you can allow them to communicate via events. In my code you can find two implementations of event bus. One is using Guava, and second is in plain java.
 
 ***Facade*** is a structural design pattern, that allows usage of simplified interface communicated to encapsulated library, framework etc.
 For example: you want to create user service for some complex system. This system will interact with user data in two ways: register and login. There is no point in exposing whole implementation to the system, its much better way to create a simple interface that will encapsulate your service and expose only basic register and login endpoint.
